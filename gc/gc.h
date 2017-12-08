@@ -1,5 +1,33 @@
+/* gc.h -- trivial single-threaded stop-world non-moving mark-sweep collector
+ **
+ ** Copyright (c) 2008 Ian Piumarta
+ ** All Rights Reserved
+ **
+ ** Permission is hereby granted, free of charge, to any person obtaining a
+ ** copy of this software and associated documentation files (the 'Software'),
+ ** to deal in the Software without restriction, including without limitation
+ ** the rights to use, copy, modify, merge, publish, distribute, and/or sell
+ ** copies of the Software, and to permit persons to whom the Software is
+ ** furnished to do so, provided that the above copyright notice(s) and this
+ ** permission notice appear in all copies of the Software.  Inclusion of the
+ ** the above copyright notice(s) and this permission notice in supporting
+ ** documentation would be appreciated but is not required.
+ **
+ ** THE SOFTWARE IS PROVIDED 'AS IS'.  USE ENTIRELY AT YOUR OWN RISK.
+ **
+ ** Last edited: 2012-09-09 11:38:29 by piumarta on linux32
+ */
+
 #ifndef _GC_H_
 #define _GC_H_
+
+#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 struct GC_StackRoot
 {
@@ -63,6 +91,12 @@ GC_API	const char *GC_function(void *ptr);
 # define GC_function(PTR)			"?"
 #endif
 
+#define GC_NEW(type) (type *)GC_malloc_atomic(sizeof(type))
+#define GC_MALLOC(size) GC_malloc(size)
+#define GC_MALLOC_ATOMIC(size) GC_malloc_atomic(size)
+#define GC_REALLOC(ptr, lbs) GC_realloc(ptr, lbs)
+#define GC_FREE(ptr) GC_free(ptr)
+
 typedef void (*GC_finaliser_t)(void *ptr, void *data);
 
 GC_API	void GC_register_finaliser(void *ptr, GC_finaliser_t finaliser, void *data);
@@ -112,10 +146,10 @@ extern struct GC_StackRoot *GC_stack_roots;
   {
     struct GC_StackRoot *nr= sr->next;
     struct GC_StackRoot *gr= GC_stack_roots;
+    int n= 0;
     if (!sr->live)			{ fprintf(stderr, "*** %s %d %s: STALE POP IN GC_pop_root\n", file, line, name);  goto die; }
     sr->live= 0;
     if (GC_roots_include(nr, sr))	{ fprintf(stderr, "*** %s %d %s: CYCLE IN GC_pop_root\n", file, line, name);  goto die; }
-    int n= 0;
     while (nr != gr) {
       if (n++ > 10) { fprintf(stderr, "*** %s %d %s: LOOP IN GC_pop_root\n", file, line, name);  goto die; }
       gr= gr->next;
@@ -130,6 +164,7 @@ extern struct GC_StackRoot *GC_stack_roots;
       nr= nr->next;
     }
     abort();
+    return;
   }
 
 #endif
@@ -149,6 +184,10 @@ extern GC_free_function_t GC_free_function;
   GC_API void GC_save  (FILE *out, void (*saver)(FILE *, void *));
   GC_API void GC_loader(FILE *in,  void *ptr);
   GC_API int  GC_load  (FILE *in,  void (*loader)(FILE *, void*));
+#endif
+
+#ifdef __cplusplus
+}
 #endif
 
 #endif /* _GC_H_ */

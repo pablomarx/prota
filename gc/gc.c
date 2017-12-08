@@ -204,6 +204,10 @@ GC_API void *GC_malloc_atomic(size_t lbs)
 
 GC_API void *GC_realloc(void *ptr, size_t lbs)
 {
+  if (ptr == NULL) {
+    return GC_malloc(lbs);
+  }
+  
   gcheader *hdr= ptr2hdr(ptr);
   void *mem;
   if (lbs <= hdr->size) return ptr;
