@@ -17,6 +17,8 @@
 		F15282EE1FDA5C020005BA68 /* symbols.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F15282BE1FDA510C0005BA68 /* symbols.cpp */; };
 		F15282F91FDA5C210005BA68 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F15282F31FDA5C200005BA68 /* test.cpp */; };
 		F15282FB1FDA5C3B0005BA68 /* libprota.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F15282E31FDA5BF60005BA68 /* libprota.dylib */; };
+		F15283011FDA778C0005BA68 /* boot.stm in CopyFiles */ = {isa = PBXBuildFile; fileRef = F15282FF1FDA77840005BA68 /* boot.stm */; };
+		F15283021FDA778C0005BA68 /* play.stm in CopyFiles */ = {isa = PBXBuildFile; fileRef = F15283001FDA77850005BA68 /* play.stm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +32,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F15282AA1FDA50F10005BA68 /* CopyFiles */ = {
+		F15282FE1FDA77760005BA68 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				F15283011FDA778C0005BA68 /* boot.stm in CopyFiles */,
+				F15283021FDA778C0005BA68 /* play.stm in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -63,6 +67,8 @@
 		F15282DD1FDA59E20005BA68 /* gc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gc.h; sourceTree = "<group>"; };
 		F15282E31FDA5BF60005BA68 /* libprota.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libprota.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15282F31FDA5C200005BA68 /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
+		F15282FF1FDA77840005BA68 /* boot.stm */ = {isa = PBXFileReference; lastKnownFileType = file; path = boot.stm; sourceTree = "<group>"; };
+		F15283001FDA77850005BA68 /* play.stm */ = {isa = PBXFileReference; lastKnownFileType = file; path = play.stm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +153,8 @@
 		F15282EF1FDA5C200005BA68 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				F15282FF1FDA77840005BA68 /* boot.stm */,
+				F15283001FDA77850005BA68 /* play.stm */,
 				F15282F31FDA5C200005BA68 /* test.cpp */,
 			);
 			path = test;
@@ -178,7 +186,7 @@
 			buildPhases = (
 				F15282A81FDA50F10005BA68 /* Sources */,
 				F15282A91FDA50F10005BA68 /* Frameworks */,
-				F15282AA1FDA50F10005BA68 /* CopyFiles */,
+				F15282FE1FDA77760005BA68 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -388,6 +396,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include";
+				OTHER_CFLAGS = "-DPROJECT_DIR=\"$(PROJECT_DIR)\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
