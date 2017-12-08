@@ -1,5 +1,7 @@
 bdwgc/
 build/
+project.xcworkspace
+xcuserdata
 .DS_Store
 *.log
 *.suo

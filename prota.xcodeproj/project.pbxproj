@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F15282E71FDA5C020005BA68 /* gc.c in Sources */ = {isa = PBXBuildFile; fileRef = F15282DC1FDA59E20005BA68 /* gc.c */; };
+		F15282E81FDA5C020005BA68 /* dbgtrace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F15282C21FDA510C0005BA68 /* dbgtrace.cpp */; };
+		F15282E91FDA5C020005BA68 /* interpreter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F15282B71FDA510C0005BA68 /* interpreter.cpp */; };
+		F15282EA1FDA5C020005BA68 /* objects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F15282B91FDA510C0005BA68 /* objects.cpp */; };
+		F15282EB1FDA5C020005BA68 /* predef-objs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F15282C01FDA510C0005BA68 /* predef-objs.cpp */; };
+		F15282EC1FDA5C020005BA68 /* printer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F15282B81FDA510C0005BA68 /* printer.cpp */; };
+		F15282ED1FDA5C020005BA68 /* streaming.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F15282BF1FDA510C0005BA68 /* streaming.cpp */; };
+		F15282EE1FDA5C020005BA68 /* symbols.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F15282BE1FDA510C0005BA68 /* symbols.cpp */; };
+		F15282F91FDA5C210005BA68 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F15282F31FDA5C200005BA68 /* test.cpp */; };
+		F15282FB1FDA5C3B0005BA68 /* libprota.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F15282E31FDA5BF60005BA68 /* libprota.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F15282FC1FDA5EB70005BA68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F15282A41FDA50F10005BA68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F15282E21FDA5BF60005BA68;
+			remoteInfo = prota;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F15282AA1FDA50F10005BA68 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F15282AC1FDA50F10005BA68 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15282B71FDA510C0005BA68 /* interpreter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = interpreter.cpp; sourceTree = "<group>"; };
+		F15282B81FDA510C0005BA68 /* printer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = printer.cpp; sourceTree = "<group>"; };
+		F15282B91FDA510C0005BA68 /* objects.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = objects.cpp; sourceTree = "<group>"; };
+		F15282BA1FDA510C0005BA68 /* opcodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opcodes.h; sourceTree = "<group>"; };
+		F15282BD1FDA510C0005BA68 /* objects-private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "objects-private.h"; sourceTree = "<group>"; };
+		F15282BE1FDA510C0005BA68 /* symbols.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = symbols.cpp; sourceTree = "<group>"; };
+		F15282BF1FDA510C0005BA68 /* streaming.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = streaming.cpp; sourceTree = "<group>"; };
+		F15282C01FDA510C0005BA68 /* predef-objs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "predef-objs.cpp"; sourceTree = "<group>"; };
+		F15282C11FDA510C0005BA68 /* objhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objhash.h; sourceTree = "<group>"; };
+		F15282C21FDA510C0005BA68 /* dbgtrace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dbgtrace.cpp; sourceTree = "<group>"; };
+		F15282CB1FDA51710005BA68 /* predefined.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = predefined.h; sourceTree = "<group>"; };
+		F15282CC1FDA51710005BA68 /* native.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = native.h; sourceTree = "<group>"; };
+		F15282CD1FDA51710005BA68 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		F15282CE1FDA51710005BA68 /* interpreter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interpreter.h; sourceTree = "<group>"; };
+		F15282CF1FDA51710005BA68 /* objects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objects.h; sourceTree = "<group>"; };
+		F15282D01FDA51710005BA68 /* proto-errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "proto-errors.h"; sourceTree = "<group>"; };
+		F15282DC1FDA59E20005BA68 /* gc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gc.c; sourceTree = "<group>"; };
+		F15282DD1FDA59E20005BA68 /* gc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gc.h; sourceTree = "<group>"; };
+		F15282E31FDA5BF60005BA68 /* libprota.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libprota.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15282F31FDA5C200005BA68 /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F15282A91FDA50F10005BA68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15282FB1FDA5C3B0005BA68 /* libprota.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15282E01FDA5BF60005BA68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F15282A31FDA50F10005BA68 = {
+			isa = PBXGroup;
+			children = (
+				F15282EF1FDA5C200005BA68 /* test */,
+				F15282DB1FDA59BC0005BA68 /* gc */,
+				F15282CA1FDA51710005BA68 /* include */,
+				F15282B61FDA510C0005BA68 /* runtime */,
+				F15282AD1FDA50F10005BA68 /* Products */,
+				F15282FA1FDA5C3B0005BA68 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F15282AD1FDA50F10005BA68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F15282AC1FDA50F10005BA68 /* test */,
+				F15282E31FDA5BF60005BA68 /* libprota.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F15282B61FDA510C0005BA68 /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				F15282C21FDA510C0005BA68 /* dbgtrace.cpp */,
+				F15282B71FDA510C0005BA68 /* interpreter.cpp */,
+				F15282BD1FDA510C0005BA68 /* objects-private.h */,
+				F15282B91FDA510C0005BA68 /* objects.cpp */,
+				F15282C11FDA510C0005BA68 /* objhash.h */,
+				F15282BA1FDA510C0005BA68 /* opcodes.h */,
+				F15282C01FDA510C0005BA68 /* predef-objs.cpp */,
+				F15282B81FDA510C0005BA68 /* printer.cpp */,
+				F15282BF1FDA510C0005BA68 /* streaming.cpp */,
+				F15282BE1FDA510C0005BA68 /* symbols.cpp */,
+			);
+			path = runtime;
+			sourceTree = "<group>";
+		};
+		F15282CA1FDA51710005BA68 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				F15282CD1FDA51710005BA68 /* config.h */,
+				F15282CE1FDA51710005BA68 /* interpreter.h */,
+				F15282CC1FDA51710005BA68 /* native.h */,
+				F15282CF1FDA51710005BA68 /* objects.h */,
+				F15282CB1FDA51710005BA68 /* predefined.h */,
+				F15282D01FDA51710005BA68 /* proto-errors.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		F15282DB1FDA59BC0005BA68 /* gc */ = {
+			isa = PBXGroup;
+			children = (
+				F15282DC1FDA59E20005BA68 /* gc.c */,
+				F15282DD1FDA59E20005BA68 /* gc.h */,
+			);
+			path = gc;
+			sourceTree = "<group>";
+		};
+		F15282EF1FDA5C200005BA68 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				F15282F31FDA5C200005BA68 /* test.cpp */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		F15282FA1FDA5C3B0005BA68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F15282E11FDA5BF60005BA68 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F15282AB1FDA50F10005BA68 /* test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F15282B31FDA50F10005BA68 /* Build configuration list for PBXNativeTarget "test" */;
+			buildPhases = (
+				F15282A81FDA50F10005BA68 /* Sources */,
+				F15282A91FDA50F10005BA68 /* Frameworks */,
+				F15282AA1FDA50F10005BA68 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F15282FD1FDA5EB70005BA68 /* PBXTargetDependency */,
+			);
+			name = test;
+			productName = prota;
+			productReference = F15282AC1FDA50F10005BA68 /* test */;
+			productType = "com.apple.product-type.tool";
+		};
+		F15282E21FDA5BF60005BA68 /* prota */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F15282E41FDA5BF60005BA68 /* Build configuration list for PBXNativeTarget "prota" */;
+			buildPhases = (
+				F15282DF1FDA5BF60005BA68 /* Sources */,
+				F15282E01FDA5BF60005BA68 /* Frameworks */,
+				F15282E11FDA5BF60005BA68 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = prota;
+			productName = libprota;
+			productReference = F15282E31FDA5BF60005BA68 /* libprota.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F15282A41FDA50F10005BA68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Steve White";
+				TargetAttributes = {
+					F15282AB1FDA50F10005BA68 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F15282E21FDA5BF60005BA68 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F15282A71FDA50F10005BA68 /* Build configuration list for PBXProject "prota" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F15282A31FDA50F10005BA68;
+			productRefGroup = F15282AD1FDA50F10005BA68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F15282AB1FDA50F10005BA68 /* test */,
+				F15282E21FDA5BF60005BA68 /* prota */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F15282A81FDA50F10005BA68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15282F91FDA5C210005BA68 /* test.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15282DF1FDA5BF60005BA68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15282E71FDA5C020005BA68 /* gc.c in Sources */,
+				F15282E81FDA5C020005BA68 /* dbgtrace.cpp in Sources */,
+				F15282EB1FDA5C020005BA68 /* predef-objs.cpp in Sources */,
+				F15282EA1FDA5C020005BA68 /* objects.cpp in Sources */,
+				F15282EC1FDA5C020005BA68 /* printer.cpp in Sources */,
+				F15282EE1FDA5C020005BA68 /* symbols.cpp in Sources */,
+				F15282ED1FDA5C020005BA68 /* streaming.cpp in Sources */,
+				F15282E91FDA5C020005BA68 /* interpreter.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F15282FD1FDA5EB70005BA68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F15282E21FDA5BF60005BA68 /* prota */;
+			targetProxy = F15282FC1FDA5EB70005BA68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F15282B11FDA50F10005BA68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F15282B21FDA50F10005BA68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F15282B41FDA50F10005BA68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F15282B51FDA50F10005BA68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F15282E51FDA5BF60005BA68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				OTHER_CFLAGS = "-D_DEBUG=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F15282E61FDA5BF60005BA68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F15282A71FDA50F10005BA68 /* Build configuration list for PBXProject "prota" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F15282B11FDA50F10005BA68 /* Debug */,
+				F15282B21FDA50F10005BA68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F15282B31FDA50F10005BA68 /* Build configuration list for PBXNativeTarget "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F15282B41FDA50F10005BA68 /* Debug */,
+				F15282B51FDA50F10005BA68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F15282E41FDA5BF60005BA68 /* Build configuration list for PBXNativeTarget "prota" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F15282E51FDA5BF60005BA68 /* Debug */,
+				F15282E61FDA5BF60005BA68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F15282A41FDA50F10005BA68 /* Project object */;
+}
